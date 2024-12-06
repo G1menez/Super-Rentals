@@ -1,0 +1,14 @@
+{{!-- pagina index --}}
+<Jumbo>
+  <h2>Seja bem vindo ao Super Rentals!</h2>
+  <p>Desejamos que você ache exatamente o que esta procurando</p>
+  <LinkTo @route="about" class="button">Sobre nós</LinkTo>
+</Jumbo>
+{{!-- linka com a pagina de java script com os dados para aparecerem na pagina --}}
+<div class="rentals">
+  <ul class="results">
+    {{#each @model as |rental|}}
+      <li><Rental @rental={{rental}} /></li>
+    {{/each}}
+  </ul>
+</div>

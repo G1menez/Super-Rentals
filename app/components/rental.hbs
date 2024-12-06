@@ -1,0 +1,32 @@
+{{!-- article dos lugares para alugar --}}
+<article class="rental">
+  {{!-- imagem do local --}}
+  <Rental::Image
+    src={{@rental.image}}
+    alt="A picture of {{@rental.title}}"
+  />
+  {{!-- detalhes do local --}}
+  <div class="details">
+    <h3>
+      <LinkTo @route="rental" @model={{@rental}}>
+        {{@rental.title}}
+      </LinkTo>
+    </h3>
+    {{!-- dono --}}
+    <div class="detail owner">
+      <span>Proprietario:</span> {{@rental.owner}}
+    </div>
+    {{!-- tipo --}}
+    <div class="detail type">
+      <span>Tipo:</span> {{@rental.type}}
+    </div>
+    {{!-- local --}}
+    <div class="detail location">
+      <span>Localização:</span> {{@rental.city}}
+    </div>
+    {{!-- quartos --}}
+    <div class="detail bedrooms">
+      <span>Número de Quartos:</span> {{@rental.bedrooms}}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,40 @@
+{{!-- pagina detalhado após clicar no lugar com as informações --}}
+<Jumbo>
+  {{!-- titulo e subtitulo da pagina com o botão de compartilhar no X --}}
+  <h2>{{@rental.title}}</h2>
+  <p>Boa escolha! Parece um lugar muito bom para ficar perto de {{@rental.city}}.</p>
+  <ShareButton
+    @text="Olhe {{@rental.title}} no Super Rentals5!"
+    @hashtags="vacation,travel,authentic,blessed,superrentals"
+    @via="emberjs"
+  >
+    Compartilhe no X
+  </ShareButton>
+</Jumbo>
+{{!-- imagem da propriedade --}}
+<article class="rental detailed">
+  <Rental::Image
+    src={{@rental.image}}
+    alt="A picture of {{@rental.title}}"
+  />
+  {{!-- detalhes da propriedade, como dono, tipo, localidade e numero de quartos --}}
+  <div class="details">
+    <h3>Sobre {{@rental.title}}</h3>
+
+    <div class="detail owner">
+      <span>Proprietario:</span> {{@rental.owner}}
+    </div>
+    <div class="detail type">
+      <span>Tipo:</span> {{@rental.type}} – {{@rental.category}}
+    </div>
+    <div class="detail location">
+      <span>Localização:</span> {{@rental.city}}
+    </div>
+    <div class="detail bedrooms">
+      <span>Número de quartos:</span> {{@rental.bedrooms}}
+    </div>
+    <div class="detail description">
+      <p>{{@rental.description}}</p>
+    </div>
+  </div>
+</article>

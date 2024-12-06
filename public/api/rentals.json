@@ -1,0 +1,55 @@
+{
+  "data": [
+    {
+      "type": "rental",
+      "id": "grand-old-mansion",
+      "attributes": {
+        "title": "Mansão Velha",
+        "owner": "Veruca Salt",
+        "city": "San Francisco",
+        "location": {
+          "lat": 37.7749,
+          "lng": -122.4194
+        },
+        "category": "Estate",
+        "bedrooms": 15,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        "description": "Esta grande e antiga mansão fica em mais de 100 acres de colinas e densas florestas"
+      }
+    },
+    {
+      "type": "rental",
+      "id": "predio-urbano",
+      "attributes": {
+        "title": "Predio Urbano",
+        "owner": "Mike Teavee",
+        "city": "Seattle",
+        "location": {
+          "lat": 47.6062,
+          "lng": -122.3321
+        },
+        "category": "Condo",
+        "bedrooms": 1,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Seattle_-_Barnes_and_Bell_Buildings.jpg",
+        "description": "Um sonho dos viajantes. Este lugar fica a poucos passos de 2 pontos de ônibus e de Metro."
+      }
+    },
+    {
+      "type": "rental",
+      "id": "predio-central",
+      "attributes": {
+        "title": "Predio Central",
+        "owner": "Violet Beauregarde",
+        "city": "Portland",
+        "location": {
+          "lat": 45.5175,
+          "lng": -122.6801
+        },
+        "category": "Apartment",
+        "bedrooms": 3,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg",
+        "description": "A conveniência está à sua porta com este charmoso lugar no centro da cidade. Ótimos restaurantes e alguns bares a poucos metros."
+      }
+    }
+  ]
+}

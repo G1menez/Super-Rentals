@@ -1,0 +1,19 @@
+{
+  "data": {
+   "type": "rental",
+      "id": "grand-old-mansion",
+      "attributes": {
+        "title": "Mansão Velha",
+        "owner": "Veruca Salt",
+        "city": "San Francisco",
+        "location": {
+          "lat": 37.7749,
+          "lng": -122.4194
+        },
+        "category": "Estate",
+        "bedrooms": 15,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+        "description": "Esta grande e antiga mansão fica em mais de 100 acres de colinas e densas florestas"
+    }
+  }
+}
